@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "rootDirs": [
+      "./src",
+      "./test",
+      "./env"
+    ],
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "noLib": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "types": [
+      "reflect-metadata",
+      "jest",
+      "node"
+    ],
+    "paths": {
+      "@BuildingBlocks/*": ["src/BuildingBlocks/*"],
+      "@Gateway/*": ["src/Gateway/*"],
+      "@Modules/*": ["src/Modules/*"],
+      "@test/*": ["test/*"]
+    },
+  },
+  "include": [
+    "./src",
+    "./env"
+  ],
+  "exclude": [
+    "./client"
+  ]
+}

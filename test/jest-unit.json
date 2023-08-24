@@ -1,0 +1,22 @@
+{
+    "moduleFileExtensions": ["js", "json", "ts"],
+    "rootDir": "../",
+    "testEnvironment": "node",
+    "testRegex": ".*.unit.spec.ts$",
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
+    "setupFiles": [
+      "./test/setupFile.ts"
+    ],
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "@BuildingBlocks/(.*)$": "<rootDir>src/BuildingBlocks/$1",
+      "@Gateway/(.*)$": "<rootDir>src/Gateway/$1",
+      "@Modules/(.*)$": "<rootDir>src/Modules/$1"
+     
+    }
+  }
+  
